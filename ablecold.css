@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Code for navabr */
+
+.navbar {
+    /* display: flex; */
+    align-items: center;
+    /* justify-content: space-between */
+}
+
+.navbar .left-nav {
+    position: absolute;
+    margin-top: 5px;
+}
+
+.navbar .left-nav .logo img {
+    height: 82px;
+}
+
+
+/* Code for middle nav*/
+
+.middle-nav .features ul {
+    display: flex;
+    list-style-type: none;
+    /* position: relative; */
+    margin-left: 350px;
+    margin-top: 46px;
+}
+
+.middle-nav .features ul li a {
+    text-decoration: none;
+    color: #005d70;
+    font-size: 25px;
+    border-right: 2px solid black;
+    text-align: center;
+    padding-right: 24px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* display: block; */
+}
+
+.middle-nav .features ul li {
+    padding-left: 25px;
+}
+
+.navbar .right-nav a {
+    position: absolute;
+    right: 18px;
+    top: 24px;
+    background-color: #005d70;
+    color: white;
+    padding: 0px 24px;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.middle-nav .features ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/*   CODE FOR CAROUSEL  */
+
+.slider {
+    width: 1370px;
+    height: 379px;
+    /* border-radius: 10px; */
+    overflow: hidden;
+    margin: auto;
+    margin-top: -45px;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 1169px;
+    margin-top: -126px;
+    margin-left: 86px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid rgb(126, 114, 114);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: #005d70;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+
+/*About section*/
+
+.about {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.about h3 {
+    font-family: 'Libre Baskerville', serif;
+    color: #005d70;
+    font-weight: bold;
+}
+
+.about p {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 20px;
+}
+
+
+/* Code for middle container*/
+
+
+/*LEFT PART */
+
+.middle-container {
+    display: flex;
+    margin: 1rem;
+    animation-duration: 4s;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.map img {
+    width: 100%;
+}
+
+
+/* RIGHT PART*/
+
+.expertises .heading h3 {
+    font-family: 'Libre Baskerville', serif;
+    color: #005d70;
+    font-weight: bold;
+    /* position: absolute; */
+    margin-left: 250px;
+    margin-top: 52px;
+    text-decoration: underline;
+}
+
+.expertises .expertise .image img {
+    height: 152px;
+}
+
+.middle-container .expertises .expertise {
+    display: flex;
+    align-items: center;
+}
+
+.expertise .text .sub-heading h4 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #005d70;
+}
+
+.expertise .text p {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+.middle-container .expertises .expertise:nth-child(2n+1) {
+    margin-left: 280px;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*  OUR CUSTOMERS PART*/
+
+.second-middle {
+    margin-top: 35px;
+}
+
+.customers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.customers .customer .companies img {
+    width: 100%;
+    /* border-right: 2px solid #ccc; */
+    padding: 0.5rem;
+    margin-top: 16px;
+}
+
+.heading-2 h3 {
+    font-weight: bold;
+    font-family: 'Libre Baskerville', serif;
+    color: #005d70;
+}
+
+.heading-2 {
+    text-align: center;
+    /* font-size: 30px; */
+}
+
+
+/* WHAT OUR CLIENTS SAY */
+
+.clients {
+    margin-top: 35px;
+}
+
+.clients .heading-3 h3 {
+    font-weight: bold;
+    font-family: 'Libre Baskerville', serif;
+    color: #005d70;
+}
+
+.heading-3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+.clients_grid_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+}
+
+.left>.fa{
+    cursor: pointer;
+}
+.right>.fa{
+    cursor: pointer;
+}
+
+.clients_grid {
+     width: 90vw;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    align-items: center;
+    margin: 2rem;
+
+}
+
+.clients_grid_comp {
+    border: 5px solid #ccc;
+    flex: 0 0 20vw;
+    margin: 2rem;
+    height: 250px;
+    width: 100px;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 8px #888;
+
+}
+
+.clients_grid_comp>i {
+    font-size: 5rem;
+}
+
+.clients .slide {
+    /* position: absolute; */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    border: 2px solid white;
+}
+
+.slide span {
+    font-size: 35px;
+    color: black;
+    line-height: 41px;
+}
+
+.content .right {
+    right: 0;
+}
+
+
+/* OUR  SERVICES */
+
+.services {
+    margin-bottom: 15px;
+}
+
+.services .heading-4 h3 {
+    font-weight: bold;
+    font-family: 'Libre Baskerville', serif;
+    color: #005d70;
+}
+
+.heading-4 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 32px;
+}
+
+.services .sub-services {
+    text-align: center;
+}
+
+.services .sub-services:nth-child(2n) {
+    margin-right: 650px;
+}
+
+.services .sub-services:nth-child(2n+1) {
+    margin-left: 650px;
+}
+
+.services .sub-services h4 {
+    /* font-weight: bold; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #005d70;
+    font-size: 25px;
+}
+
+.services .sub-services p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.services .sub-services a {
+    color: black;
+    text-decoration: underline;
+}
+
+#sub-footer {
+    display: flex;
+    align-items: center;
+}
+
+#sub-footer .footer-image img {
+    width: 100%;
+    height: 118px;
+}
+
+
+/*****
+
+
+.nav-root{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.mid_nav_grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+**/
