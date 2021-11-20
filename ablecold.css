@@ -69,7 +69,7 @@
 /*   CODE FOR CAROUSEL  */
 
 .slider {
-    width: 1370px;
+    width: 100%
     height: 379px;
     /* border-radius: 10px; */
     overflow: hidden;
